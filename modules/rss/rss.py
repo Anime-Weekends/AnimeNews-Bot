@@ -18,7 +18,7 @@ async def fetch_and_send_news(app: Client, db, global_settings_collection, urls)
 
             if not db.sent_news.find_one({"entry_id": entry_id}):
                 thumbnail_url = entry.media_thumbnail[0]['url'] if 'media_thumbnail' in entry else None
-                msg = f"<b>**{entry.title}**</b>\n\n{entry.summary if 'summary' in entry else ''}\n\n<a href='{entry.link}'>Read more</a>"
+                msg = f"<b>**<blockquote>{entry.title}</blockquote>**</b>\n<blockquote expandable>{entry.summary if 'summary' in entry else ''}</blockquote>\n<>blockquote<a href='{entry.link}'>Rᴇᴀᴅ ᴍᴏʀᴇ</blockquote></a>"
 
                 try:
                     await asyncio.sleep(15)  # Delay between messages
