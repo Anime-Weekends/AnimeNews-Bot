@@ -47,11 +47,11 @@ async def start(client, message):
     chat_id = message.chat.id
     buttons = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("ᴍᴀɪɴ ʜᴜʙ", url="https://t.me/GenAnimeOfc"),
-            InlineKeyboardButton("ꜱᴜᴩᴩᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url="https://t.me/+z05NzRmuqjBkYTdl"),
+            InlineKeyboardButton("Aɴɪᴍᴇ", url="https://t.me/Anime_Weekends"),
+            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/Weebs_Weekends"),
         ],
         [
-            InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/darkxside78"),
+            InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/RexySama"),
         ],
     ])
 
@@ -61,10 +61,10 @@ async def start(client, message):
         chat_id, 
         photo_url,
         caption=(
-            f"**ʙᴀᴋᴋᴀᴀᴀ {message.from_user.first_name}!!!**\n"
+            f"**ʙᴀᴋᴋᴀᴀᴀ {message.from_user.first_name}!!!**\n/n"
             f"**ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴜᴩʟᴏᴀᴅ ᴛᴏᴏʟ ʙᴏᴛ.**\n"
             f"**ɪ ᴡᴀs ᴄʀᴇᴀᴛᴇᴅ ᴛᴏ ᴍᴀᴋᴇ ᴀɴɪᴍᴇ ᴜᴩʟᴏᴀᴅᴇʀ's ʟɪғᴇ ᴇᴀsɪᴇʀ...**\n"
-            f"**ɪ ᴀᴍ sᴛɪʟʟ ɪɴ ʙᴇᴛᴀ ᴛᴇsᴛɪɴɢ ᴠᴇʀsɪᴏɴ...**"
+            f"**<blockquote>By @Eminence_Society</blockquote>**"
         ),
         reply_markup=buttons
     )
