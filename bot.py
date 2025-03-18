@@ -47,8 +47,8 @@ async def start(client, message):
     chat_id = message.chat.id
     buttons = InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("Aɴɪᴍᴇ", url="https://t.me/Anime_Weekends"),
-            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/Weebs_Weekends"),
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url="https://t.me/EmitingStars_Botz"),
+            InlineKeyboardButton("Sᴜᴩᴩᴏʀᴛ", url="https://t.me/+HZuPVe0l-F1mM2Jl"),
         ],
         [
             InlineKeyboardButton("Dᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/RexySama"),
@@ -61,10 +61,9 @@ async def start(client, message):
         chat_id, 
         photo_url,
         caption=(
-            f"**ʙᴀᴋᴋᴀᴀᴀ {message.from_user.first_name}!!!**\n/n"
-            f"**ɪ ᴀᴍ ᴀɴ ᴀɴɪᴍᴇ ᴜᴩʟᴏᴀᴅ ᴛᴏᴏʟ ʙᴏᴛ.**\n"
-            f"**ɪ ᴡᴀs ᴄʀᴇᴀᴛᴇᴅ ᴛᴏ ᴍᴀᴋᴇ ᴀɴɪᴍᴇ ᴜᴩʟᴏᴀᴅᴇʀ's ʟɪғᴇ ᴇᴀsɪᴇʀ...**\n"
-            f"**<blockquote>By @Eminence_Society</blockquote>**"
+            f"**<blockquote>Hᴏɪ ᴘʀᴏ {message.from_user.first_name} !!!</blockquote>**\n"
+            f"**<blockquote expandable>I ᴀᴍ ᴀɴ ᴀᴜᴛᴏ ᴀɴɪᴍᴇ ɴᴇᴡs ʙᴏᴛ ғᴇᴛᴄʜɪɴɢ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴀɴɪᴍᴇ ɴᴇᴡs ғʀᴏᴍ sᴇʟᴇᴄᴛᴇᴅ sɪᴛᴇs. sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ ᴡɪᴛʜ ɴᴇᴡ ʀᴇʟᴇᴀsᴇs, ɪɴᴅᴜsᴛʀʏ ᴛʀᴇɴᴅs, ᴀɴᴅ ᴍᴏʀᴇ ᴅᴇʟɪᴠᴇʀᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ !</blockquote>**\n"
+            f"**<blockquote><a href="https://t.me/EmitingStars_Botz">Eᴍɪᴛɪɴɢ sᴛᴀʀs</a></blockquote>**"
         ),
         reply_markup=buttons
     )
@@ -74,12 +73,12 @@ async def start(client, message):
 async def connect_news(client, message):
     chat_id = message.chat.id
     if len(message.text.split()) == 1:
-        await app.send_message(chat_id, "Please provide a channel id or username (without @).")
+        await app.send_message(chat_id, "<blockquote>Mʏ ʟᴏʀᴅ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴄʜᴀɴɴᴇʟ ɪᴅ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ (ᴡɪᴛʜᴏᴜᴛ @).</blockquote>")
         return
 
     channel = " ".join(message.text.split()[1:]).strip()
     global_settings_collection.update_one({"_id": "config"}, {"$set": {"news_channel": channel}}, upsert=True)
-    await app.send_message(chat_id, f"News channel set to: @{channel}")
+    await app.send_message(chat_id, f"<blockquote>Nᴇᴡs ᴄʜᴀɴɴᴇʟ sᴇᴛ ᴛᴏ : @{channel} ɴᴏᴡ ɪ ᴄᴀɴ ᴀʙʟᴇ ᴛᴏ ᴘᴏsᴛ ᴀɴɪᴍᴇ ɴᴇᴡs</blockquote>")
 
 sent_news_entries = set()
 
