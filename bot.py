@@ -63,7 +63,7 @@ async def start(client, message):
         caption=(
             f"**<blockquote>Hᴏɪ ᴘʀᴏ{message.from_user.first_name} !!!</blockquote>**\n"
             f"**<blockquote expandable>I ᴀᴍ ᴀɴ ᴀᴜᴛᴏ ᴀɴɪᴍᴇ ɴᴇᴡs ʙᴏᴛ ғᴇᴛᴄʜɪɴɢ ᴛʜᴇ ʟᴀᴛᴇsᴛ ᴀɴɪᴍᴇ ɴᴇᴡs ғʀᴏᴍ sᴇʟᴇᴄᴛᴇᴅ sɪᴛᴇs. sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ ᴡɪᴛʜ ɴᴇᴡ ʀᴇʟᴇᴀsᴇs, ɪɴᴅᴜsᴛʀʏ ᴛʀᴇɴᴅs, ᴀɴᴅ ᴍᴏʀᴇ ᴅᴇʟɪᴠᴇʀᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ !</blockquote>**\n"
-            f"**<blockquote><a href="https://t.me/EmitingStars_Botz">Eᴍɪᴛɪɴɢ sᴛᴀʀs</a></blockquote>**"
+            f"**<blockquote><a href=https://t.me/EmitingStars_Botz>Eᴍɪᴛɪɴɢ sᴛᴀʀs</a></blockquote>**"
         ),
         reply_markup=buttons
     )
