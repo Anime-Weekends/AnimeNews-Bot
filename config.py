@@ -7,4 +7,3 @@ URL_A = "http://myanimelist.net/rss.php?type=news" #News RSS Feed Url 2
 #URL_B = "" #News RSS Feed Url 2
 START_PIC = "https://i.ibb.co/xqz1cS2Y/photo-2025-03-18-18-32-32-7483219264686522396.jpg" #Startup Pic
 MONGO_URI = "mongodb+srv://soulmovies37:FwHMGCpSMCnVVmhw@cluster0.uyokx.mongodb.net/?retryWrites=true&w=majority" #Databse uri get it from https://www.mongodb.com/
-ADMINS = "6266529037" #Admin ID
