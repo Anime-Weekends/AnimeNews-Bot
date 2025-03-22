@@ -6,7 +6,7 @@ import subprocess
 import threading
 import pymongo
 import feedparser
-from config import API_ID, API_HASH, BOT_TOKEN, URL_A, START_PIC, MONGO_URI, ADMINS
+from config import API_ID, API_HASH, BOT_TOKEN, URL_A, START_PIC, MONGO_URI
 
 from webhook import start_webhook
 
@@ -72,10 +72,6 @@ async def start(client, message):
 @app.on_message(filters.command("news"))
 async def connect_news(client, message):
     chat_id = message.chat.id
-
-    if message.from_user.id not in ADMINS:
-        await app.send_message(chat_id, "You do not have permission to use this command.")
-        return
     if len(message.text.split()) == 1:
         await app.send_message(chat_id, "<blockquote>Mʏ ʟᴏʀᴅ ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴄʜᴀɴɴᴇʟ ɪᴅ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ (ᴡɪᴛʜᴏᴜᴛ @).</blockquote>")
         return
